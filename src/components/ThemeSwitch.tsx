@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { IonIcon } from '@ionic/react';
+
 const ThemeSwitch = () => {
-    const  [theme, setTheme] = useState();
+    const  [theme, setTheme] = useState<string>();
     const element = document.documentElement
     const options = [
         {icon:"sunny-sharp", text: "Light Mode"},
@@ -14,18 +16,20 @@ const ThemeSwitch = () => {
       }
 
     useEffect(()=>{
-        switch (theme) {
-            case 'Dark Mode':
-                element.classList.add('dark');
-                localStorage.setItem('theme', 'Dark Mode');
-                break;
-            case 'Light Mode':
-                element.classList.remove('dark');
-                localStorage.setItem('theme', 'Light Mode');
-                break;
-            default:
-                localStorage.removeItem('theme');
-                break;
+        if (theme) {
+            switch (theme) {
+                case 'Dark Mode':
+                    element.classList.add('dark');
+                    localStorage.setItem('theme', 'Dark Mode');
+                    break;
+                case 'Light Mode':
+                    element.classList.remove('dark');
+                    localStorage.setItem('theme', 'Light Mode');
+                    break;
+                default:
+                    localStorage.removeItem('theme');
+                    break;
+            }
         }
     }, [theme])
         
@@ -37,11 +41,11 @@ const ThemeSwitch = () => {
                     onClick={()=>setTheme(opt.text)}
                     className={`w-8, h-8 leading-9 text-xl rounded-full m-1 ${ theme === opt.text && "text-sky-600"}`
                 }>
-                    <ion-icon name={opt.icon} alt={opt.text}></ion-icon>
+                    <IonIcon name={opt.icon} />
                 </button>
             ))}
         </div>
     );
-    };
+};
 
 export default ThemeSwitch

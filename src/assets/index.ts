@@ -7,8 +7,8 @@ import mastadon from "./mastadon.svg"
 import close from "./close.svg"
 import plus from "./plus.svg"
 import arrowdown from "./arrow-down.svg"
-import sun from "./sun.svg"
-import moon from "./moon.svg"
+import sun from "./Sun.svg"
+import moon from "./Moon.svg"
 export {
   menu,
   facebook,

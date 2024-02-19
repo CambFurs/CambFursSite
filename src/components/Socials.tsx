@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from '../style'
 import { socials } from '../constants'
 /*TODO: Fix this code in MD size monitors, Long form text will overlap*/

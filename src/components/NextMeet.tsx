@@ -1,9 +1,16 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from '../style';
 import {dates} from '../constants';
 
+type NextMeetType = {
+  date: string;
+  location: string;
+  specialNotes: string;
+  daysUntil: number;
+}
+
 const NextMeet = () => {
-  const [nextMeet, setNextMeet] = useState(null);
+  const [nextMeet, setNextMeet] = useState<NextMeetType | null>(null);
 
   useEffect(() => {
     const today = new Date();
@@ -12,7 +19,7 @@ const NextMeet = () => {
     for (let meet of dates) {
       let meetDate = new Date(meet.date.split('-').reverse().join('-'));
       if (meetDate >= today) {
-        const diffTime = Math.abs(meetDate - today);
+        const diffTime = Math.abs(meetDate.getTime() - today.getTime());
         const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
         setNextMeet({ ...meet, daysUntil: diffDays });
         break;
