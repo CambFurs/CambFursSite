@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
 import { rules } from '../constants';
 import {arrowdown} from '../assets';
 import styles from '../style';
+import { useState } from 'react';
 
 const Rules = () => {
-  const [visibleKey, setVisibleKey] = useState(null);
+  const [visibleKey, setVisibleKey] = useState<number | null>(null);
 
-  const toggleVisibility = (key) => {
+  const toggleVisibility = (key: number | null) => {
     if (visibleKey === key) {
       setVisibleKey(null);
     } else {
@@ -16,7 +16,7 @@ const Rules = () => {
 
   return (
     <section id="rules" className={`${styles.flexCenter} flex-row flex-wrap sm:mb-20 mg-6`}>
-      <div className={`${styles.flexstart} sm:my-0 my-10 rounded dark:bg-black-gradient bg-orange-gradient p-10 `}>
+      <div className={`${styles.flexStart} sm:my-0 my-10 rounded dark:bg-black-gradient bg-orange-gradient p-10 `}>
         <h2 className='text-3xl dark:text-white text-black font-poppins font-bold'> Rules</h2>
         <ol style={{ listStyleType: 'decimal' }}>
           {rules.map((rule) => (
@@ -36,7 +36,7 @@ const Rules = () => {
                 {rule.subreasons && rule.subreasons.length > 0 && (
                   <ul style={{ listStyleType: 'circle' }}>
                     {rule.subreasons.map((subreason, index) => (
-                      <li key={index} className='ml-10'>{subreason.link && subreason.title ? (
+                      <li key={index} className='ml-10'>{typeof subreason === "object" ? (
                         <a href={subreason.link} className="dark:text-white text-black"style={{ textDecoration: 'underline' }} target="_blank" rel="noopener noreferrer">
                           {subreason.title}
                         </a>
