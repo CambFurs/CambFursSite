@@ -1,9 +1,9 @@
-import React from 'react'
 import styles from '../style'
 import { plus } from '../assets'
 
-const JoinButton = () => (
+const JoinButton = () => {
     
+    return (
     <div className={`${styles.flexCenter} mx-5 w-[140px] h-[140px] rounded-full dark:bg-blue-gradient bg_orange_button p-[3px] cursor-pointer`}>
         <div className={` ${styles.flexCenter} flex-col dark:bg-primary bg-slate-300 w-[100%] h-[100%] rounded-full`}>
             <a href="https://t.me/+rtNuL-0neQBhMzZk" rel='external' target='_blank'>    
@@ -21,5 +21,6 @@ const JoinButton = () => (
     </div>
     
 )
+    }
 
 export default JoinButton

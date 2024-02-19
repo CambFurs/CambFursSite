@@ -1,6 +1,6 @@
-import React from 'react';
 import styles from '../style';
-import { JoinButton, NextMeet } from '../components';
+import JoinButton from './JoinButton';
+import NextMeet from './NextMeet';
 
 const Hero = () => (
   <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>

@@ -8,7 +8,7 @@ import Socials from "./Socials";
 import Staff from "./Staff";
 import Hero from "./Hero";
 import JoinButton from "./JoinButton";
-import NextMeet from "./NextMeet";
+import NextMeet from './NextMeet';
 import ThemeSwitch from "./ThemeSwitch";
 
 export {

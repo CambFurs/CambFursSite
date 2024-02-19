@@ -1,14 +1,13 @@
-import React from 'react'
 import { useState } from 'react'
 import {menu, close} from '../assets'
 import {navLinks} from '../constants'
-import {ThemeSwitch} from '../components';
+import {ThemeSwitch} from '.';
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState<boolean>(false)
   return (
     <nav className='w-full flex py-6 justify-between items-center navbar'> 
-      <h1 className='w-[124px] font-poppins dark:text-white text-black font-extrabold' alt="CambFurs">CambFurs</h1>
+      <h1 className='w-[124px] font-poppins dark:text-white text-black font-extrabold'>CambFurs</h1>
       <ul className="list-none sm:flex hidden justify-end items-center">
         {navLinks.map((nav,index) => (
           <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] mr-10 dark:text-white text-black `}>
