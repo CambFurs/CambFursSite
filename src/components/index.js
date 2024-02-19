@@ -3,12 +3,13 @@ import MeetDates from "./meetdates";
 import Faq from "./faq";
 import Join from "./join";
 import Footer from "./footer";
-import Rules from "./rules";
+import Rules from "./Rules";
 import Socials from "./socials";
 import Staff from "./staff";
 import Hero from "./Hero";
 import JoinButton from "./JoinButton";
 import NextMeet from "./NextMeet";
+import ThemeSwitch from "./ThemeSwitch";
 
 export {
     Navbar,
@@ -22,4 +23,5 @@ export {
     Hero,
     JoinButton,
     NextMeet,
+    ThemeSwitch,
 };

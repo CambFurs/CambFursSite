@@ -24,7 +24,7 @@
   
 }
 
-.text-gradient {
+@layer components {.text-gradient {
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
     #def9fa 0.89%,
@@ -38,9 +38,23 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-}
+}}
+@layer components {.bg_orange_button {
+  background: linear-gradient(157.81deg, #B86E3D 0%, #D19A75 100%);
+}}
 
-.bg-blue-gradient {
+@layer components {.text_orange {
+  background: linear-gradient(157.81deg, #B86E3D 0%, #D19A75 100%);
+}}
+
+@layer components {.text-orange-gradient {
+  background: linear-gradient(157.81deg, #B86E3D 0%, #D19A75 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}}
+@layer components {.bg-blue-gradient {
   background: linear-gradient(
     157.81deg,
     #def9fa -43.27%,
@@ -50,16 +64,21 @@
     #5ce1e6 51.94%,
     #33bbcf 90.29%
   );
+}}
+@layer components {.bg-orange-gradient {
+  background: #fdc830; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #fdc830, #f37335); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #fdc830, #f37335); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
-.bg-black-gradient {
+}
+@layer components {.bg-black-gradient {
   background: linear-gradient(
     144.39deg,
     #ffffff -278.56%,
     #6d6d6d -78.47%,
     #11101d 91.61%
   );
-}
+}}
 
 .bg-black-gradient-2 {
   background: linear-gradient(

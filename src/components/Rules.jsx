@@ -1,23 +1,61 @@
-import React from 'react'
-import { rules } from '../constants'
-import styles from '../style'
+import React, { useState } from 'react';
+import { rules } from '../constants';
+import {arrowdown} from '../assets';
+import styles from '../style';
 
 const Rules = () => {
+  const [visibleKey, setVisibleKey] = useState(null);
+
+  const toggleVisibility = (key) => {
+    if (visibleKey === key) {
+      setVisibleKey(null);
+    } else {
+      setVisibleKey(key);
+    }
+  };
+
   return (
-    <section className={`${styles.flexCenter} flex-row flex-wrap sm:mb-20 mg-6`}>
-      <div className={`${styles.flexstart} sm:my-0 my-10 rounded bg-black-gradient p-10 `}>
-        <h2 className='text-white font-poppins'> Rules</h2>
-        ###
+    <section id="rules" className={`${styles.flexCenter} flex-row flex-wrap sm:mb-20 mg-6`}>
+      <div className={`${styles.flexstart} sm:my-0 my-10 rounded dark:bg-black-gradient bg-orange-gradient p-10 `}>
+        <h2 className='text-3xl dark:text-white text-black font-poppins font-bold'> Rules</h2>
         <ol style={{ listStyleType: 'decimal' }}>
           {rules.map((rule) => (
-            <li key={rule.key} className={`${styles.paragraph} max-w-470px mt-5`}>{rule.rule}</li>
+            <li key={rule.key} className={`${styles.paragraph} max-w-470px mt-5`}>
+              <div className='flex flex-row' onClick={() => toggleVisibility(rule.key)}>
+              {rule.rule}
+              <span className='cursor-pointer' ><img src={arrowdown} className='m-1 w-[23px] h-[23px] object-contain text-gradient md:block hidden' alt='Show More'/></span>
+              </div>
+              <div
+                id={`info_${rule.key}`}
+                style={{
+                  display: visibleKey === rule.key ? 'block' : 'none',
+                }}
+              >
+                <hr className='my-2'/>
+                <p className='dark:text-white text-black'>{rule.reason}</p>
+                {rule.subreasons && rule.subreasons.length > 0 && (
+                  <ul style={{ listStyleType: 'circle' }}>
+                    {rule.subreasons.map((subreason, index) => (
+                      <li key={index} className='ml-10'>{subreason.link && subreason.title ? (
+                        <a href={subreason.link} className="dark:text-white text-black"style={{ textDecoration: 'underline' }} target="_blank" rel="noopener noreferrer">
+                          {subreason.title}
+                        </a>
+                      ) : (
+                        subreason
+                      )}
+                    </li>
+                    ))}
+                  </ul>
+                )}
+                <hr className='my-2'/>
+              </div>
+            </li>
           ))}
         </ol>
-        <p className='text-white font-poppins align-center'>Cambridge Furs is a social space and not a dating group.</p>
-        <p className='text-white font-poppins'>We want to keep the group safe, friendly, and enjoyable for everyone (both online and at meets). Please do not take anything anyone says as an invitation to hit on them. Anyone reported as cruising (specifically looking for dates) will be asked to leave the group and may not be invited back.</p>
+        
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Rules
+export default Rules;

@@ -1,9 +1,5 @@
-import React from 'react'
+import * as React from 'react';
 
 const MeetDates = () => {
-  return (
-    <div>MeetDates</div>
-  )
 }
-
-export default MeetDates
+export default MeetDates;

@@ -3,16 +3,22 @@ import facebook from "./facebook.svg";
 import twitter from "./twitter.svg";
 import barq from "./barq.svg"
 import discord from "./discord.svg"
-import mastodon from "./mastodon.svg"
+import mastadon from "./mastadon.svg"
 import close from "./close.svg"
-import arrowUp from "./arrow-up.svg"
+import plus from "./plus.svg"
+import arrowdown from "./arrow-down.svg"
+import sun from "./sun.svg"
+import moon from "./moon.svg"
 export {
   menu,
   facebook,
   twitter,
   barq,
   discord,
-  mastodon,
+  mastadon,
   close,
-  arrowUp
+  plus,
+  arrowdown,
+  sun,
+  moon
 };
