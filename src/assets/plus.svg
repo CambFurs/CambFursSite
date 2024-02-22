@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
 <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<defs>
-<linearGradient id="gradient" x1="0" x2="1" y1="1" y2="0">
-    <stop offset="0.89%%" stop-color="#def9fa" />
-    <stop offset="17.23%" stop-color="#bef3f5" />
-    <stop offset="42.04%" stop-color="#9dedf0" />
-    <stop offset="55.12%" stop-color="#7de7eb" />
-    <stop offset="71.54%" stop-color="#5ce1e6" />
-    <stop offset="100%" stop-color="#33bbcf" />
-    #def9fa 0.89%,
-    #bef3f5 17.23%,
-    #9dedf0 42.04%,
-    #7de7eb 55.12%,
-    #5ce1e6 71.54%,
-    #33bbcf 100%
-</linearGradient>
-</defs>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M12 3a1 1 0 0 0-1 1v7H4a1 1 0 1 0 0 2h7v7a1 1 0 1 0 2 0v-7h7a1 1 0 1 0 0-2h-7V4a1 1 0 0 0-1-1z" fill="url(#gradient)" />
+    <defs>
+        <linearGradient id="lightGradient" gradientTransform="rotate(157.81)">
+            <stop offset="0%" stop-color="#B86E3D" />
+            <stop offset="100%" stop-color="#D19A75" />
+        </linearGradient>
+        <linearGradient id="darkGradient" x1="0" x2="1" y1="1" y2="0">
+            <stop offset="0.89%%" stop-color="#def9fa" />
+            <stop offset="17.23%" stop-color="#bef3f5" />
+            <stop offset="42.04%" stop-color="#9dedf0" />
+            <stop offset="55.12%" stop-color="#7de7eb" />
+            <stop offset="71.54%" stop-color="#5ce1e6" />
+            <stop offset="100%" stop-color="#33bbcf" />
+        </linearGradient>
+    </defs>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12 3a1 1 0 0 0-1 1v7H4a1 1 0 1 0 0 2h7v7a1 1 0 1 0 2 0v-7h7a1 1 0 1 0 0-2h-7V4a1 1 0 0 0-1-1z" fill="url(#darkGradient)" />
 </svg>
