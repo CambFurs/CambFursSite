@@ -1,30 +1,30 @@
 import {twitter, discord, facebook, mastadon, barq} from "../assets"
-
+import { crys, daravel, dax, dart, lucky, nuka, orion, reggie, shuttleu, snipsel, toob, xeechu } from "../assets/staff";
 export const staff = [
     {
         id: "xeechu",
-        img: "#",
+        img: xeechu,
         name: "Xeechu",
         title: "Mumma Wolf",
         type: "admin"
     },
     {
         id: "shuttleu",
-        img: "#",
+        img: shuttleu,
         name: "Shuttleu",
         title: "Chief Tech Admin",
         type: "admin"
     },
     {
         id: "dax",
-        img: "#",
+        img: dax,
         name: "Dax",
         title: "Cryptidmin",
         type: "admin"
     },
     {
         id: "snipsel",
-        img: "#",
+        img: snipsel,
         name: "Snipsel",
         title: "Boss Ott",
         type: "admin"
@@ -45,42 +45,42 @@ export const staff = [
     },
     {
         id: "nuka",
-        img: "#",
+        img: nuka,
         name: "Nuka",
         title: "Gremlin",
         type: "pet"
     },
     {
         id: "dart",
-        img: "#",
+        img: dart,
         name: "Dart",
         title: "Gremlin",
         type: "pet"
     },
     {
         id: "orion",
-        img: "#",
+        img: orion,
         name: "Orion",
         title: "Thicc Lad",
         type: "pet"
     },
     {
         id: "reggie",
-        img: "#",
+        img: reggie,
         name: "Reggie",
         title: "Baby Boi",
         type: "pet"
     },
     {
         id: "lucky",
-        img: "#",
+        img: lucky,
         name: "Lucky",
         title: "Tripod",
         type: "pet"
     },
     {
         id: "toob",
-        img: "#",
+        img: toob,
         name: "Toob",
         title: "Some Otts",
         type: "pet"
@@ -106,6 +106,20 @@ export const staff = [
         title: "He just blblblb",
         type: "pet"
     },
+    {
+        id: "crys",
+        img: crys,
+        name: "Crys",
+        title: "Dad-min",
+        type: "admin"
+    },
+    {
+        id: "daravel",
+        img: daravel,
+        name: "Daravel",
+        title: "Sir Daravel IV",
+        type: "admin"
+    }
     
     
 ]

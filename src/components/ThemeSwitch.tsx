@@ -1,12 +1,14 @@
 import { useEffect, useState } from 'react';
-import { IonIcon } from '@ionic/react';
+import { IonIcon, } from '@ionic/react';
+import {sunnySharp, moonSharp} from 'ionicons/icons';
+
 
 const ThemeSwitch = () => {
     const  [theme, setTheme] = useState<string>();
     const element = document.documentElement
     const options = [
-        {icon:"sunny-sharp", text: "Light Mode"},
-        {icon:"moon-sharp", text: "Dark Mode"}
+        {icon: sunnySharp, text: "Light Mode"},
+        {icon: moonSharp, text: "Dark Mode"}
     ]
 
     if (localStorage.theme === 'Dark Mode' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -41,7 +43,7 @@ const ThemeSwitch = () => {
                     onClick={()=>setTheme(opt.text)}
                     className={`w-8, h-8 leading-9 text-xl rounded-full m-1 ${ theme === opt.text && "text-sky-600"}`
                 }>
-                    <IonIcon name={opt.icon} />
+                    <IonIcon icon={opt.icon} aria-label={opt.text} />
                 </button>
             ))}
         </div>
