@@ -1,26 +1,11 @@
 import styles from '../style';
-import { useEffect, useState } from 'react';
-//TODO: Further changes to enable svg image updating
-const JoinButton = () => {
-    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'Light Mode');
 
-    useEffect(() => {
-        // Function to get theme from local storage and set it in state
-        const setMode = () => {
-            const localTheme = window.localStorage.getItem('theme');
-            localTheme && setTheme(localTheme);
-        };
-    
-        // Event listener for when local storage changes
-        window.addEventListener('storage', setMode);
-    
-        // Call setMode right away to set the theme on initial load
-        setMode();
-    
-        return () => {
-            window.removeEventListener('storage', setMode);
-        };
-    }, []);
+type JoinButtonProps = {
+    darkColourMode: boolean;
+};
+
+//TODO: Further changes to enable svg image updating
+const JoinButton = (props: JoinButtonProps) => {
 
     return (
         <div className={`${styles.flexCenter} mx-5 w-[140px] h-[140px] rounded-full dark:bg-blue-gradient bg_orange_button p-[3px] cursor-pointer`}>
@@ -45,7 +30,7 @@ const JoinButton = () => {
                                     <stop offset="100%" stopColor="#33bbcf" />
                                 </linearGradient>
                             </defs>
-                            <path fillRule="evenodd" clipRule="evenodd" d="M12 3a1 1 0 0 0-1 1v7H4a1 1 0 1 0 0 2h7v7a1 1 0 1 0 2 0v-7h7a1 1 0 1 0 0-2h-7V4a1 1 0 0 0-1-1z" fill={`url(#${theme === 'Dark Mode' ? 'darkGradient' : 'lightGradient'})`} />
+                            <path fillRule="evenodd" clipRule="evenodd" d="M12 3a1 1 0 0 0-1 1v7H4a1 1 0 1 0 0 2h7v7a1 1 0 1 0 2 0v-7h7a1 1 0 1 0 0-2h-7V4a1 1 0 0 0-1-1z" fill={`url(#${props.darkColourMode ? 'darkGradient' : 'lightGradient'})`} />
                         </svg>
                     </div>
                     <p className='font-poppins font-medium text-[18px] leading-[23px]'>
