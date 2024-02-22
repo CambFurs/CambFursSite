@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { IonIcon, } from '@ionic/react';
 import {sunnySharp, moonSharp} from 'ionicons/icons';
 
@@ -8,7 +7,6 @@ type ThemeSwitchProps = {
 };
 
 const ThemeSwitch = (props: ThemeSwitchProps) => {
-    const  [theme, setTheme] = useState<string>();
     const element = document.documentElement
     const options = [
         {icon: sunnySharp, text: "Light Mode"},
@@ -22,27 +20,21 @@ const ThemeSwitch = (props: ThemeSwitchProps) => {
       }
 
     const switchTheme = (theme: string) => {
-        setTheme(theme);
-        props.updateColourMode(theme == "Dark Mode");
+        if (theme == "Dark Mode") {
+            props.updateColourMode(true);
+            element.classList.add('dark');
+            localStorage.setItem('theme', 'Dark Mode');
+        } else {
+            props.updateColourMode(false);
+            element.classList.remove('dark');
+            localStorage.setItem('theme', 'Light Mode');
+        }
     }
 
-    useEffect(()=>{
-        if (theme) {
-            switch (theme) {
-                case 'Dark Mode':
-                    element.classList.add('dark');
-                    localStorage.setItem('theme', 'Dark Mode');
-                    break;
-                case 'Light Mode':
-                    element.classList.remove('dark');
-                    localStorage.setItem('theme', 'Light Mode');
-                    break;
-                default:
-                    localStorage.removeItem('theme');
-                    break;
-            }
-        }
-    }, [theme])
+    const correctIcon = (icon: string): boolean => {
+        return (props.darkColourMode && icon == "Dark Mode") ||
+        (!props.darkColourMode && icon == "Light Mode")
+    }
         
     return (
         <div className='fixed top-5 right-10 duration-100 dark:bg-slate-700 bg-gray-100 rounded mr-0 pl-2 pr-2'>
@@ -50,7 +42,7 @@ const ThemeSwitch = (props: ThemeSwitchProps) => {
                 <button 
                     key={opt.text} 
                     onClick={()=>switchTheme(opt.text)}
-                    className={`w-8, h-8 leading-9 text-xl rounded-full m-1 ${ theme === opt.text && "text-sky-600"}`
+                    className={`w-8, h-8 leading-9 text-xl rounded-full m-1 ${ correctIcon(opt.text) && "text-sky-600"}`
                 }>
                     <IonIcon icon={opt.icon} aria-label={opt.text} />
                 </button>

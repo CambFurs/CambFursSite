@@ -9,6 +9,7 @@ const App = () => {
   const updateColourMode = (darkMode: boolean) => {
     setDarkColourMode(darkMode);
   }
+  
   return (
     <div className=" w-full overflow-hidden dark:text-gray-100 dark:bg-primary bg-slate-300">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
