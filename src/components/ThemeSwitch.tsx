@@ -2,8 +2,12 @@ import { useEffect, useState } from 'react';
 import { IonIcon, } from '@ionic/react';
 import {sunnySharp, moonSharp} from 'ionicons/icons';
 
+type ThemeSwitchProps = {
+    darkColourMode: boolean;
+    updateColourMode: (darkMode: boolean) => void;
+};
 
-const ThemeSwitch = () => {
+const ThemeSwitch = (props: ThemeSwitchProps) => {
     const  [theme, setTheme] = useState<string>();
     const element = document.documentElement
     const options = [
@@ -16,6 +20,11 @@ const ThemeSwitch = () => {
       } else {
         document.documentElement.classList.remove('dark')
       }
+
+    const switchTheme = (theme: string) => {
+        setTheme(theme);
+        props.updateColourMode(theme == "Dark Mode");
+    }
 
     useEffect(()=>{
         if (theme) {
@@ -40,7 +49,7 @@ const ThemeSwitch = () => {
             {options?.map(opt=>(
                 <button 
                     key={opt.text} 
-                    onClick={()=>setTheme(opt.text)}
+                    onClick={()=>switchTheme(opt.text)}
                     className={`w-8, h-8 leading-9 text-xl rounded-full m-1 ${ theme === opt.text && "text-sky-600"}`
                 }>
                     <IonIcon icon={opt.icon} aria-label={opt.text} />

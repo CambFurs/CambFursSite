@@ -3,7 +3,12 @@ import {menu, close} from '../assets'
 import {navLinks} from '../constants'
 import {ThemeSwitch} from '.';
 
-const Navbar = () => {
+type NavbarProps = {
+  darkColourMode: boolean;
+  updateColourMode: (darkMode: boolean) => void;
+};
+
+const Navbar = (props: NavbarProps) => {
   const [toggle, setToggle] = useState<boolean>(false)
   return (
     <nav className='w-full flex py-6 justify-between items-center navbar'> 
@@ -17,7 +22,7 @@ const Navbar = () => {
           </li>
         ))}
         <li>
-          <ThemeSwitch />
+          <ThemeSwitch darkColourMode={props.darkColourMode} updateColourMode={props.updateColourMode} />
         </li>
       </ul>
        
