@@ -22,7 +22,7 @@ const JoinButton = (props: JoinButtonProps) => {
                                     <stop offset="100%" stopColor="#D19A75" />
                                 </linearGradient>
                                 <linearGradient id="darkGradient" x1="0" x2="1" y1="1" y2="0">
-                                    <stop offset="0.89%%" stopColor="#def9fa" />
+                                    <stop offset="0.89%" stopColor="#def9fa" />
                                     <stop offset="17.23%" stopColor="#bef3f5" />
                                     <stop offset="42.04%" stopColor="#9dedf0" />
                                     <stop offset="55.12%" stopColor="#7de7eb" />
