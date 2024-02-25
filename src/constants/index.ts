@@ -1,5 +1,5 @@
 import {twitter, discord, facebook, mastadon, barq} from "../assets"
-import { crys, daravel, dax, dart, lucky, nuka, orion, reggie, shuttleu, snipsel, toob, xeechu } from "../assets/staff";
+import { crys, daravel, dax, dart, lucky, nuka, orion, reggie, shuttleu, snipsel, toob, xeechu, placeholder, sky, noodle, daisy, socks, merlin } from "../assets/staff";
 export const staff = [
     {
         id: "xeechu",
@@ -31,18 +31,35 @@ export const staff = [
     },
     {
         id: "sky",
-        img: "#",
+        img: sky,
         name: "Sky",
         title: "The Funnier One",
         type: "admin"
     },
     {
         id: "noodle",
-        img: "#",
+        img: noodle,
         name: "Noodle",
         title: "Ooooodly Noodly",
         type: "admin"
     },
+    
+    {
+        id: "crys",
+        img: crys,
+        name: "Crys",
+        title: "Dad-min",
+        type: "admin"
+    },
+    {
+        id: "daravel",
+        img: daravel,
+        name: "Daravel",
+        title: "Sir Daravel IV",
+        type: "admin"
+    }   
+]
+export const staffPets = [
     {
         id: "nuka",
         img: nuka,
@@ -87,43 +104,26 @@ export const staff = [
     },
     {
         id: "daisy",
-        img: "#",
+        img: daisy,
         name: "Daisy",
         title: "She so old!",
         type: "pet"
     },
     {
         id: "socks",
-        img: "#",
+        img: socks,
         name: "Socks",
         title: "Be Cat, Do Crimes",
         type: "pet"
     },
     {
         id: "merlin",
-        img: "#",
+        img: merlin,
         name: "Merlin",
         title: "He just blblblb",
         type: "pet"
     },
-    {
-        id: "crys",
-        img: crys,
-        name: "Crys",
-        title: "Dad-min",
-        type: "admin"
-    },
-    {
-        id: "daravel",
-        img: daravel,
-        name: "Daravel",
-        title: "Sir Daravel IV",
-        type: "admin"
-    }
-    
-    
 ]
-
 export const socials = [
     {
         id: "discord",
@@ -167,16 +167,16 @@ export const navLinks = [
         title: "Socials",
     },
     {
+        id: "rules",
+        title: "Rules",
+    },
+    {
         id: "staff",
         title: "Staff",
     },
     {
         id: "dates",
         title: "Dates",
-    },
-    {
-        id: "rules",
-        title: "Rules",
     },
     {
         id: "faq",
@@ -259,3 +259,15 @@ export const rules = [
     { key: 9, rule: "Do not use the chat to cruise or hit on other members.", reason: "Cambridge Furs is a social space and not a dating group. We want to keep the group safe, friendly, and enjoyable for everyone (both online and at meets). Please do not take anything anyone says as an invitation to hit on them. Anyone reported as cruising (specifically looking for dates) will be asked to leave the group and may not be invited back." },
 ];
 
+export const faq = [
+    { 
+        key: 1,
+        question: "What meets can I fursuit at?", 
+        answer: "Any meet that is being held as an outdoor meet/picnic meet, which usually take place from late spring to early autumn. Sadly we don’t have a venue for indoor suiting yet!" 
+    },
+    { 
+        key: 2,
+        question: "What is your minimum age for attending?", 
+        answer: "Our minimum age is 16, this is due to child safety laws.",
+    },
+]

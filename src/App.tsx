@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './style';
 
-import { Navbar, Faq, Footer, MeetDates, Rules, Socials, Staff, Hero , NextMeet} from './components';
+import { Navbar, Faq, Footer, MeetDates, Rules, Socials, Hero , NextMeet,  StaffBar} from './components';
 
 const App = () => {
   const [darkColourMode, setDarkColourMode] = useState<boolean>(localStorage.theme === 'Dark Mode' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches));
@@ -34,12 +34,22 @@ const App = () => {
       </div>
       <div className={`dark:bg-primary bg-slate-300 ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          <Staff/>
+          <StaffBar/>
         </div>
       </div>
       <div className={`dark:bg-primary bg-slate-300 ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <MeetDates/>
+        </div>
+      </div>
+      <div className={`dark:bg-primary bg-slate-300 ${styles.paddingX} ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Faq/>
+        </div>
+      </div>
+      <div className={`dark:bg-primary bg-slate-300 ${styles.paddingX} ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Footer/>
         </div>
       </div>
     </div>
