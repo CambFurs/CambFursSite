@@ -59,8 +59,8 @@ const StaffPets = () => {
               className={`card ${determineClasses(indexes, index)} dark:bg-black-gradient bg-orange-gradient`}
             >
               <img src={staffPets.img} alt={staffPets.name} />
-              <h2 className='font-poppins font-bold dark:text-white text-black'>{staffPets.name}</h2>
-              <p className='font-poppins dark:text-white text-black'>{staffPets.title}</p>
+              <h2 className='font-poppins font-bold dark:text-white text-near-black'>{staffPets.name}</h2>
+              <p className='font-poppins dark:text-white text-near-black'>{staffPets.title}</p>
             </li>
           ))}
         </ul>

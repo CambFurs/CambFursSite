@@ -36,10 +36,10 @@ const switchTheme = (theme: string) => {
 
   return (
     <nav className='w-full flex py-6 justify-between items-center navbar'> 
-      <h1 className='w-[124px] font-poppins dark:text-white text-black font-extrabold'>CambFurs</h1>
+      <h1 className='w-[124px] font-poppins dark:text-white text-near-black font-extrabold'>CambFurs</h1>
       <ul className="list-none sm:flex hidden justify-end items-center">
         {navLinks.map((nav,index) => (
-          <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] mr-10 dark:text-white text-black `}>
+          <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] mr-10 dark:text-white text-near-black `}>
               <a href={`#${nav.id}`}>
                 {nav.title}
               </a>
@@ -55,7 +55,7 @@ const switchTheme = (theme: string) => {
         <div className={`${toggle ? 'flex' : 'hidden'} p-6 dark:bg-black-gradient bg-orange-gradient absolute top-20 right-0 mx-4 my-2 min-w[140px] rounded-xl sidebar`}>
           <ul className="list-none flex-col justify-end items-center">
             {navLinks.map((nav,index) => (
-              <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] mb-4 dark:text-white text-black `}>
+              <li key={nav.id} className={`font-poppins font-normal cursor-pointer text-[16px] mb-4 dark:text-white text-near-black `}>
                   <a href={`#${nav.id}`}>
                     {nav.title}
                   </a>
@@ -66,7 +66,7 @@ const switchTheme = (theme: string) => {
                 <button>
                   <a 
                     onClick={() => switchTheme(opt.text)}
-                    className={`font-poppins font-normal cursor-pointer text-[16px] dark:text-white text-black mb-0 ${localStorage.theme === opt.text ? 'hidden' : ''}`}
+                    className={`font-poppins font-normal cursor-pointer text-[16px] dark:text-white text-near-blackmb-0 ${localStorage.theme === opt.text ? 'hidden' : ''}`}
                   >
                     {opt.text}
                   </a>

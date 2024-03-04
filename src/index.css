@@ -24,6 +24,19 @@
   
 }
 
+@layer components {
+  .bg-primary-light {
+    background: #edf2f4;
+  }
+}
+
+@layer components {
+  .text-near-black {
+    color: #2B2D42;
+  }
+
+}
+
 @layer components {.text-gradient {
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
@@ -66,9 +79,9 @@
   );
 }}
 @layer components {.bg-orange-gradient {
-  background: #fdc830; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #fdc830, #f37335); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #fdc830, #f37335); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #FFDD6D; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #FFDD6D, #FFC60A); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #FFDD6D, #FFC60A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 }
 @layer components {.bg-black-gradient {
