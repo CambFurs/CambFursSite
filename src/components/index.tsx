@@ -5,11 +5,12 @@ import Join from "./Join";
 import Footer from "./Footer";
 import Rules from "./Rules";
 import Socials from "./Socials";
-import Staff from "./Staff";
+import StaffBar from "./StaffBar";
 import Hero from "./Hero";
 import JoinButton from "./JoinButton";
 import NextMeet from './NextMeet';
 import ThemeSwitch from "./ThemeSwitch";
+
 
 export {
     Navbar,
@@ -19,7 +20,7 @@ export {
     Footer,
     Rules,
     Socials,
-    Staff,
+    StaffBar,
     Hero,
     JoinButton,
     NextMeet,
