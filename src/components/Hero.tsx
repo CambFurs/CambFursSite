@@ -19,7 +19,6 @@ const Hero = (props: HeroProps) => (
     </div>
     <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>
       <NextMeet/>
-      <div className='absolute z-[0] w-[40%] h-[35%] top-0 blue__gradient'></div>
     </div>
     <div className={`ss:hidden ${styles.flexCenter}`}>
       <JoinButton darkColourMode={props.darkColourMode}/>

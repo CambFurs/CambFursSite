@@ -37,7 +37,7 @@ const ThemeSwitch = (props: ThemeSwitchProps) => {
     }
         
     return (
-        <div className='fixed top-5 right-10 duration-100 dark:bg-slate-700 bg-gray-100 rounded mr-0 pl-2 pr-2'>
+        <div className='fixed bottom-0 right-1 duration-100 dark:bg-slate-700 bg-gray-100 rounded-t-lg mr-0 pl-2 pr-2'>
             {options?.map(opt=>(
                 <button 
                     key={opt.text} 

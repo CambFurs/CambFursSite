@@ -51,7 +51,7 @@ const StaffPets = () => {
   return (
     <div className="container flex justify-center flex-1">
       <div className='basis-1/2'>
-        <h1 className='font-poppins justify-center text-3xl'>Meet the Furrier Admins</h1>
+        <h1 className='font-poppins text-center text-2xl'>Meet the Furrier Admins</h1>
         <ul className="card-carousel">
           {staffPets.map((staffPets, index) => (
             <li

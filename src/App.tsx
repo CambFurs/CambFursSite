@@ -11,7 +11,7 @@ const App = () => {
   }
   
   return (
-    <div className=" w-full overflow-hidden dark:text-gray-100 dark:bg-primary bg-primary-light">
+    <div className="  w-full overflow-hidden dark:text-gray-100 dark:bg-primary bg-primary-light">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar darkColourMode={darkColourMode} updateColourMode={updateColourMode} />
@@ -41,17 +41,10 @@ const App = () => {
         <div className={`${styles.boxWidth}`}>
           <MeetDates/>
         </div>
-      </div>
-      <div className={`dark:bg-primary bg-primary-light ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Faq/>
         </div>
-      </div>
-      <div className={`dark:bg-primary bg-primary-light ${styles.paddingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Footer/>
-        </div>
-      </div>
+      </div>      
     </div>
   )
 };
