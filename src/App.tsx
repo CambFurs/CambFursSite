@@ -11,47 +11,40 @@ const App = () => {
   }
   
   return (
-    <div className=" w-full overflow-hidden dark:text-gray-100 dark:bg-primary bg-slate-300">
+    <div className="  w-full overflow-hidden dark:text-gray-100 dark:bg-primary bg-primary-light">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar darkColourMode={darkColourMode} updateColourMode={updateColourMode} />
         </div>  
       </div>
-      <div className={`dark:bg-primary bg-slate-300 ${styles.flexStart}`}>
+      <div className={`dark:bg-primary bg-primary-light ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Hero darkColourMode={darkColourMode}/>
         </div>
       </div>
-      <div id="#socials" className={`dark:bg-primary bg-slate-300 ${styles.paddingX} ${styles.flexStart}`}>
+      <div id="#socials" className={`dark:bg-primary bg-primary-light ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Socials/>
         </div>
       </div>
-      <div className={`dark:bg-primary bg-slate-300 ${styles.paddingX} ${styles.flexStart}`}>
+      <div className={`dark:bg-primary bg-primary-light ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Rules/>
         </div>
       </div>
-      <div className={`dark:bg-primary bg-slate-300 ${styles.paddingX} ${styles.flexStart}`}>
+      <div className={`dark:bg-primary bg-primary-light ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <StaffBar/>
         </div>
       </div>
-      <div className={`dark:bg-primary bg-slate-300 ${styles.paddingX} ${styles.flexStart}`}>
+      <div className={`dark:bg-primary bg-primary-light ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <MeetDates/>
         </div>
-      </div>
-      <div className={`dark:bg-primary bg-slate-300 ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Faq/>
         </div>
-      </div>
-      <div className={`dark:bg-primary bg-slate-300 ${styles.paddingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Footer/>
-        </div>
-      </div>
+      </div>      
     </div>
   )
 };

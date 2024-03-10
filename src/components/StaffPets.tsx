@@ -51,7 +51,7 @@ const StaffPets = () => {
   return (
     <div className="container flex justify-center flex-1">
       <div className='basis-1/2'>
-        <h1 className='font-poppins justify-center text-3xl'>Meet the Furrier Admins</h1>
+        <h1 className='font-poppins text-center text-2xl'>Meet the Furrier Admins</h1>
         <ul className="card-carousel">
           {staffPets.map((staffPets, index) => (
             <li
@@ -59,8 +59,8 @@ const StaffPets = () => {
               className={`card ${determineClasses(indexes, index)} dark:bg-black-gradient bg-orange-gradient`}
             >
               <img src={staffPets.img} alt={staffPets.name} />
-              <h2 className='font-poppins font-bold dark:text-white text-black'>{staffPets.name}</h2>
-              <p className='font-poppins dark:text-white text-black'>{staffPets.title}</p>
+              <h2 className='font-poppins font-bold dark:text-white text-near-black'>{staffPets.name}</h2>
+              <p className='font-poppins dark:text-white text-near-black'>{staffPets.title}</p>
             </li>
           ))}
         </ul>

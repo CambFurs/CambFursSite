@@ -11,7 +11,6 @@ import JoinButton from "./JoinButton";
 import NextMeet from './NextMeet';
 import ThemeSwitch from "./ThemeSwitch";
 
-
 export {
     Navbar,
     MeetDates,
