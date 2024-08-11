@@ -132,12 +132,6 @@ export const socials = [
         image: discord,
     },
     {
-        id: "facebook",
-        name: "Facebook",
-        link: "https://facebook.cambfurs.co.uk/",
-        image: facebook,
-    },
-    {
         id: "x",
         name: "X",
         link: "https://twitter.cambfurs.co.uk/",

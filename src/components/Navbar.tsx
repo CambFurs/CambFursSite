@@ -11,6 +11,10 @@ type NavbarProps = {
 const Navbar = (props: NavbarProps) => {
   const element = document.documentElement
   const [toggle, setToggle] = useState<boolean>(false)
+  window.addEventListener('scroll', () => {
+    setToggle(false);
+  });
+  
   const options = [
     { text: "Light Mode"},
     { text: "Dark Mode"}
@@ -30,8 +34,7 @@ const switchTheme = (theme: string) => {
     } else {
         props.updateColourMode(false);
         element.classList.remove('dark');
-        localStorage.setItem('theme', 'Light Mode');
-    }
+        }
 }
 
   return (
@@ -50,7 +53,7 @@ const switchTheme = (theme: string) => {
         </li>
       </ul>
        
-      <div className='sm:hidden flex flex-1 justify-end items-center '>
+      <div className='sm:hidden flex flex-1 justify-end items-center ' >
         <img src={toggle ? close : menu} alt="menu" className="w-[28px] h-[28px] object-contain" onClick={() => setToggle((prev)=> !prev)}/>
         <div className={`${toggle ? 'flex' : 'hidden'} p-6 dark:bg-black-gradient bg-orange-gradient absolute top-20 right-10 mx-4 my-2 min-w[140px] rounded-xl sidebar`}>
           <ul className="list-none flex-col justify-end items-center">
