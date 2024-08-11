@@ -40,7 +40,7 @@ const currentDate = new Date();
                     </tbody>
                 </table>
                 <div className="mt-2 sm:float-right xs:text-center">
-                    <a href="https://www.calendar.cambfurs.co.uk" target="_blank" rel="noreferrer" className="flex dark:text-white text-near-black">
+                    <a href="https://calendar.cambfurs.co.uk" target="_blank" rel="noreferrer" className="flex dark:text-white text-near-black">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4 m-1">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
                         </svg>
