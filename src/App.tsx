@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import styles from './style';
 
-import { Navbar, Faq, Footer, MeetDates, Rules, Socials, Hero , NextMeet,  StaffBar} from './components';
+import { Navbar, Footer, Rules, Socials, Hero , StaffBar, DateFaqHero} from './components';
 
 const App = () => {
   const [darkColourMode, setDarkColourMode] = useState<boolean>(localStorage.theme === 'Dark Mode' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches));
@@ -37,15 +37,19 @@ const App = () => {
           <StaffBar/>
         </div>
       </div>
+      <div className='divide-y-8 dark:divide-[#525459] divide-[#F5D6B4]'>
       <div className={`dark:bg-primary bg-primary-light ${styles.paddingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
-          <MeetDates/>
+        <DateFaqHero/>
+      </div>    
+      
+        <div className={`bg-orange-300 dark:bg-neutral-400 ${styles.paddingX} ${styles.flexStart}`}>
+          <div className={`${styles.boxWidth}`}>
+            <Footer/>
+          </div>
         </div>
-        <div className={`${styles.boxWidth}`}>
-          <Faq/>
-        </div>
-      </div>      
+      </div>
     </div>
+    
   )
 };
 

@@ -10,6 +10,7 @@ import Hero from "./Hero";
 import JoinButton from "./JoinButton";
 import NextMeet from './NextMeet';
 import ThemeSwitch from "./ThemeSwitch";
+import DateFaqHero from "./DateFaqHero";
 
 export {
     Navbar,
@@ -24,4 +25,5 @@ export {
     JoinButton,
     NextMeet,
     ThemeSwitch,
+    DateFaqHero,
 };
