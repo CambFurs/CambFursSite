@@ -26,7 +26,7 @@ const currentDate = new Date();
                         <tr >
                             <th className="xs:text-xl text-2xl border-b font-bold p-4 pl-8 pt-0 pb-3">Date</th>
                             <th className="xs:text-xl text-2xl border-b font-bold p-4 pl-8 pt-0 pb-3">Location</th>
-                            <th className="xs:text-lg text-xl md:text-2xl border-b font-bold p-4 pl-8 pt-0 pb-3">Special Notes</th>
+                            <th className="xs:text-lg sm:text-xl md:text-2xl border-b font-bold p-4 pl-8 pt-0 pb-3">Special Notes</th>
                         </tr>
                     </thead>
                     <tbody>
