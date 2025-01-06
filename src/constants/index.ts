@@ -180,62 +180,62 @@ export const navLinks = [
 
 export const dates = [
     {
-        date: '20-01-2024',
+        date: '25-01-2025',
         location: 'on Discord',
         specialNotes: ''
     },
     {
-        date: '17-02-2024',
+        date: '15-02-2025',
         location: 'In Person',
         specialNotes: ''
     },
     {
-        date: '23-03-2024',
+        date: '22-03-2025',
         location: 'In Person',
         specialNotes: ''
     },
     {
-        date: '13-04-2024',
+        date: '12-04-2025',
         location: 'In Person',
         specialNotes: 'Shepreth Meet'
     },
     {
-        date: '11-05-2024',
+        date: '10-05-2025',
         location: 'In Person',
         specialNotes: 'Picnic Meet'
     },
     {
-        date: '15-06-2024',
+        date: '14-06-2025',
+        location: 'In Person',
+        specialNotes: 'Cambridge Pride Meet'
+    },
+    {
+        date: '12-07-2025',
         location: 'In Person',
         specialNotes: 'Picnic Meet'
     },
     {
-        date: '13-07-2024',
+        date: '23-08-2025',
         location: 'In Person',
         specialNotes: 'Picnic Meet'
     },
     {
-        date: '17-08-2024',
-        location: 'In Person',
-        specialNotes: 'Picnic Meet'
-    },
-    {
-        date: '14-09-2024',
+        date: '27-09-2025',
         location: 'In Person',
         specialNotes: ''
     },
     {
-        date: '19-10-2024',
+        date: '18-10-2025',
         location: 'In Person',
         specialNotes: ''
     },
     {
-        date: '16-11-2024',
+        date: '15-11-2025',
         location: 'In Person',
         specialNotes: ''
     },
     {
-        date: '14-12-2024',
+        date: '13-12-2025',
         location: 'on Discord',
         specialNotes: ''
     }
