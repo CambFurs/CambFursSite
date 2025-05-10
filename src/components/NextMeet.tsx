@@ -18,6 +18,7 @@ const NextMeet = () => {
 
     for (let meet of dates) {
       let meetDate = new Date(meet.date.split('-').reverse().join('-'));
+      meetDate.setHours(0, 0, 0, 0); // to fix DST
       if (meetDate >= today) {
         const diffTime = Math.abs(meetDate.getTime() - today.getTime());
         const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
@@ -40,8 +41,8 @@ const NextMeet = () => {
                 <p className='dark:text-white text-near-blackfont-poppins font-medium text-xl p-3 px-10'>
                 {nextMeet.daysUntil === 0 ? <>The meet is <span className='font-extrabold'>today</span>!</> : 
                     <>The next meet is in <span className='font-poppins font-extrabold'>{nextMeet.daysUntil}</span> days on {formatDate(nextMeet.date)}</>
-                }, 
-                {nextMeet.location === "on Discord" && `, and is happening ${nextMeet.location}`}
+                }
+                {nextMeet.location === "on Discord" && ` and is happening ${nextMeet.location}`}
                 {nextMeet.specialNotes && ` and is a ${nextMeet.specialNotes.toLowerCase()}!`}
                 </p>
             ) : (
