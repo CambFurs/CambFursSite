@@ -91,7 +91,7 @@ export const socials = [
     {
         id: "bluesky",
         name: "Bluesky",
-        link: "https://bsky.app/profile/cambfurs.co.uk",
+        link: "https://bluesky.cambfurs.co.uk/",
         image: bluesky,
     },
     {
