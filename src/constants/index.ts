@@ -1,5 +1,5 @@
-import {twitter, discord, facebook, mastadon, barq} from "../assets"
-import { crys, daravel, dax, dart, lucky, nuka, orion, reggie, shuttleu, snipsel, toob, xeechu, placeholder, sky, noodle, daisy, socks, merlin } from "../assets/staff";
+import {twitter, discord, bluesky, mastadon, barq} from "../assets"
+import { orion, reggie, shuttleu, snipsel, toob, xeechu, placeholder, sky, noodle, daisy, socks, merlin } from "../assets/staff";
 export const staff = [
     {
         id: "xeechu",
@@ -39,20 +39,6 @@ export const staff = [
 ]
 export const staffPets = [
     {
-        id: "nuka",
-        img: nuka,
-        name: "Nuka",
-        title: "Gremlin",
-        type: "pet"
-    },
-    {
-        id: "dart",
-        img: dart,
-        name: "Dart",
-        title: "Gremlin",
-        type: "pet"
-    },
-    {
         id: "orion",
         img: orion,
         name: "Orion",
@@ -64,13 +50,6 @@ export const staffPets = [
         img: reggie,
         name: "Reggie",
         title: "Baby Boi",
-        type: "pet"
-    },
-    {
-        id: "lucky",
-        img: lucky,
-        name: "Lucky",
-        title: "Tripod",
         type: "pet"
     },
     {
@@ -108,6 +87,12 @@ export const socials = [
         name: "Discord",
         link: "https://discord.cambfurs.co.uk/",
         image: discord,
+    },
+    {
+        id: "bluesky",
+        name: "Bluesky",
+        link: "https://bsky.app/profile/cambfurs.co.uk",
+        image: bluesky,
     },
     {
         id: "x",

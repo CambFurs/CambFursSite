@@ -1,9 +1,3 @@
-import crys from './crys.avif';
-import daravel from './daravel.avif';
-import dax from './dax.avif';
-import dart from './dart.avif';
-import lucky from './lucky.avif';
-import nuka from './nuka.avif';
 import orion from './orion.avif';
 import reggie from './reggie.avif';
 import shuttleu from './shuttleu.avif';
@@ -18,12 +12,6 @@ import socks from './socks.png'
 import merlin from './merlin.jpg'
 
 export {
-    crys,
-    daravel,
-    dax,
-    dart,
-    lucky,
-    nuka,
     orion,
     reggie,
     shuttleu,

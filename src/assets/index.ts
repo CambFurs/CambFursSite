@@ -1,5 +1,4 @@
 import menu from "./menu.svg";
-import facebook from "./facebook.svg";
 import twitter from "./twitter.svg";
 import barq from "./barq.svg"
 import discord from "./discord.svg"
@@ -9,10 +8,11 @@ import plus from "./plus.svg"
 import arrowdown from "./arrow-down.svg"
 import sun from "./Sun.svg"
 import moon from "./Moon.svg"
+import bluesky from "./bluesky.svg"
 export {
   menu,
-  facebook,
   twitter,
+  bluesky,
   barq,
   discord,
   mastadon,
