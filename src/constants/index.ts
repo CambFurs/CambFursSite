@@ -16,13 +16,6 @@ export const staff = [
         type: "admin"
     },
     {
-        id: "dax",
-        img: dax,
-        name: "Dax",
-        title: "Cryptidmin",
-        type: "admin"
-    },
-    {
         id: "snipsel",
         img: snipsel,
         name: "Snipsel",
@@ -42,22 +35,7 @@ export const staff = [
         name: "Noodle",
         title: "Ooooodly Noodly",
         type: "admin"
-    },
-    
-    {
-        id: "crys",
-        img: crys,
-        name: "Crys",
-        title: "Dad-min",
-        type: "admin"
-    },
-    {
-        id: "daravel",
-        img: daravel,
-        name: "Daravel",
-        title: "Sir Daravel IV",
-        type: "admin"
-    }   
+    }, 
 ]
 export const staffPets = [
     {
