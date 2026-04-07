@@ -1,18 +1,11 @@
 import {twitter, discord, bluesky, mastadon, barq} from "../assets"
-import { orion, reggie, shuttleu, snipsel, toob, xeechu, placeholder, sky, noodle, daisy, socks, merlin } from "../assets/staff";
+import { orion, reggie, snipsel, toob, xeechu, placeholder, sky, daisy, socks, edison, felder, harlequeen } from "../assets/staff";
 export const staff = [
     {
         id: "xeechu",
         img: xeechu,
         name: "Xeechu",
         title: "Mumma Wolf",
-        type: "admin"
-    },
-    {
-        id: "shuttleu",
-        img: shuttleu,
-        name: "Shuttleu",
-        title: "Chief Tech Admin",
         type: "admin"
     },
     {
@@ -30,28 +23,30 @@ export const staff = [
         type: "admin"
     },
     {
-        id: "noodle",
-        img: noodle,
-        name: "Noodle",
-        title: "Ooooodly Noodly",
+        id: "edison",
+        img: edison,
+        name: "Edison",
+        title: "",
+        type: "admin"
+    }, 
+    
+    {
+        id: "felder",
+        img: felder,
+        name: "Felder",
+        title: "",
+        type: "admin"
+    }, 
+    
+    {
+        id: "harlequeen",
+        img: harlequeen,
+        name: "Harlequeen",
+        title: "",
         type: "admin"
     }, 
 ]
 export const staffPets = [
-    {
-        id: "orion",
-        img: orion,
-        name: "Orion",
-        title: "Thicc Lad",
-        type: "pet"
-    },
-    {
-        id: "reggie",
-        img: reggie,
-        name: "Reggie",
-        title: "Baby Boi",
-        type: "pet"
-    },
     {
         id: "toob",
         img: toob,
@@ -71,13 +66,6 @@ export const staffPets = [
         img: socks,
         name: "Socks",
         title: "Be Cat, Do Crimes",
-        type: "pet"
-    },
-    {
-        id: "merlin",
-        img: merlin,
-        name: "Merlin",
-        title: "He just blblblb",
         type: "pet"
     },
 ]
@@ -143,62 +131,47 @@ export const navLinks = [
 
 export const dates = [
     {
-        date: '25-01-2025',
-        location: 'on Discord',
-        specialNotes: ''
-    },
-    {
-        date: '15-02-2025',
+        date: '18-04-2026',
         location: 'In Person',
-        specialNotes: ''
+        specialNotes: 'Picnic Meet'
     },
     {
-        date: '22-03-2025',
-        location: 'In Person',
-        specialNotes: ''
-    },
-    {
-        date: '12-04-2025',
+        date: '30-05-2026',
         location: 'In Person',
         specialNotes: 'Shepreth Meet'
     },
     {
-        date: '10-05-2025',
-        location: 'In Person',
-        specialNotes: 'Picnic Meet'
-    },
-    {
-        date: '14-06-2025',
+        date: '13-06-2026',
         location: 'In Person',
         specialNotes: 'Cambridge Pride Meet'
     },
     {
-        date: '12-07-2025',
+        date: '25-07-2026',
         location: 'In Person',
         specialNotes: 'Picnic Meet'
     },
     {
-        date: '23-08-2025',
+        date: '22-08-2026',
         location: 'In Person',
         specialNotes: 'Picnic Meet'
     },
     {
-        date: '27-09-2025',
+        date: '26-09-2026',
         location: 'In Person',
         specialNotes: ''
     },
     {
-        date: '18-10-2025',
+        date: '24-10-2026',
         location: 'In Person',
         specialNotes: ''
     },
     {
-        date: '15-11-2025',
+        date: '14-11-2026',
         location: 'In Person',
         specialNotes: ''
     },
     {
-        date: '13-12-2025',
+        date: '12-12-2026',
         location: 'on Discord',
         specialNotes: ''
     }
